@@ -128,7 +128,7 @@ export  default  passportInstance;
 
 - As you see, the client is named `passportInstance`, and its configuration values align with those entered in the Online Dev Portal to ensure successful redirection. The code above also designates the `SANDBOX` environment, which corresponds to the testnet. We finally export it from the file, making it accessible from other pages.
 
-b. With that sorted, let's proceed to installing some packages that are essential for the `withPassportClient` function in the passport module. The reason we need these packages is because ***previous versions of Webpack supported these packages automatically***. However, in Webpack versions greater than 5, this is no longer the default behavior. So, we need to ***manually add these packages***, by configuring our **Webpack.config.js** file inside the **react-scripts module** located in the node_modules folder, and then restart the server.
+b. With that sorted, let's proceed to installing some packages that are essential for the `withPassportError` function in the passport module. The reason we need these packages is because ***previous versions of Webpack supported these packages automatically***. However, in Webpack versions greater than 5, this is no longer the default behavior. So, we need to ***manually add these packages***, by configuring our **Webpack.config.js** file inside the **react-scripts module** located in the node_modules folder, and then restart the server.
 
 ```
 yarn add assert
@@ -140,7 +140,7 @@ yarn add crypto-browserify
 # "CTRL+F to search fallbacks, then under "resolve"
 
 fallback: {
-"assert": require.resolve("asset/"),
+"assert": require.resolve("assetr/"),
 "crypto":  require.resolve("crypto-browserify/"),
 "stream":  require.resolve("stream-browserify/")
 },
