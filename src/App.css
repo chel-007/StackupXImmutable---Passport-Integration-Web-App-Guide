@@ -1,5 +1,22 @@
 .App {
   text-align: center;
+  height: 100vh;
+}
+
+.cut {
+  text-align: center;
+  text-overflow:ellipsis;
+  width: 450px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.cut:hover{
+  text-overflow:clip;
+  width:100%;
+  overflow: scroll;
+  white-space: pre-wrap;
+  color: white;
 }
 
 .App-logo {
